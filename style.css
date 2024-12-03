@@ -1,0 +1,345 @@
+*{margin: 0; padding: 0;} /** - inicia todos os elementos com margin 0 e padding 0*/
+
+.container-principal {font-family:'Krona One'; color:#777;}
+
+/* defeniras propriedades do topo */
+header {
+    width: 100%; 
+    height:100px;
+    background-color: #fff; 
+    position: relative; 
+    top: 0;
+}
+
+/* defenir as propriedades do logo */
+.logo {
+    position:absolute; 
+    width: 300px;
+    height: auto;
+    }
+
+.logo img{
+    width: 90%; 
+    margin-left:10%;
+    margin-top: 10px;
+    }
+
+/* definir as propriedades do menu */
+nav {
+    position: absolute;
+    right: 20px; 
+    bottom: 20px;
+    }
+
+nav ul li {
+    float: left; 
+    color: #fff; 
+    width: auto; 
+    margin: 0.8em; 
+    font-size: 1.1em; 
+    font-family:'Krona One'; 
+    list-style: none;}
+
+nav ul li a {
+    text-decoration:none;
+    color:#515151;
+}
+
+nav ul li a:hover{color: #6F5CF3;}
+
+/* definir as propriedades da imagem principal */
+#banner{
+    width: 100%;
+}
+#banner img{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 0%;
+    margin-top: 0px;  
+}
+
+/* definir as propriedades dos pop'ups */
+.modalDiaolog{
+    position: fixed;
+    font-family:'Montserrat';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #161617c1;
+    z-index: 9999;
+    opacity: 0.6;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: none;
+}
+
+.modalDiaolog:target {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDiaolog div{
+    width: 500px;
+    position: relative;
+    margin: 10% auto;  
+    padding: 5px 20px 13px 20px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.modalDiaolog p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.modalDiaolog Img{
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+}
+
+.close {
+    background-color: #606061;
+    color:#ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-boeder-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.close:hover{
+    background-color: #6F5CF3;
+}
+
+/* defenir as propriedades do footer (rodapé) */
+footer{
+    width: 100%;
+    height: 18%;
+    background-color: #6F5CF3;
+    color: #fff;
+    position: relative;
+    float: left;
+    font-family:'Montserrat';
+}
+
+footer .footer-text{
+    width: 30%;
+    margin: 1%;
+    position: relative;
+    float: left;
+}
+footer .footer-text a{
+    color:#fff;
+}
+
+/* definir a cor de fundo das páginas sobre, clientes e contato */
+.color-page {
+    background-color: #ddd;
+}
+
+/* definir as propriedades das imagens de título */
+.img-titulo {
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    margin-right: 5%;
+}
+.img-titulo img{
+    width: 80%;
+    margin-left: 11%;
+    margin-top: 50px;
+    border: 5px solid #6F5CF3;
+    border-radius: 20%;
+}
+
+.img-codeCS img{ /* imagem sobre */
+    width: 20%;
+    margin-left: 3%;
+    margin-top: 40px;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    margin-right: 5%;
+}
+
+.img-titulo p{
+    text-align: center;
+    font-family: 'Krona One';
+    font-size: 20px;
+    color: #6F5CF3;
+}
+
+/* definir as propriedades da página clientes */
+#clientes-code {
+    width: 75%;
+    position: relative;
+    float: left;
+}
+#clientes-code .config-clientes{
+    width:40%;
+    border: 3px solid #6F5CF3;
+    border-radius: 5%;
+    margin-left: 1.5%;
+    padding: 1%;
+    float: left;
+    margin-top: 30px;
+    background-color:#fff ;
+}
+
+#clientes-code .config-clientes img{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 20px
+}
+#clientes-code .config-clientes p {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+#clientes-code .config-clientes p a{
+    color: #6F5CF3;
+}
+
+/* definir propriedadesda página sobre */
+#container-sobre{
+    width:65%;
+    margin-left:1%;
+    float: left;
+    position: relative; 
+    height: 80%;
+    background-color: #fff;
+    top: 40px;
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+#txt-sobre{
+    width:80%;
+    float: left; 
+    position: relative; 
+    padding: 5% ;
+}
+#txt-sobre p{
+    width:100%;
+    position: relative;
+    float: left; 
+    text-align: justify;
+}
+#txt-sobre dl{
+    width: 50%;
+}
+
+#img-conteudo-sobre{
+    width: 45%;
+    position: relative;
+    float: left; 
+    padding: 2%}
+
+#img-conteudo-sobre img{
+    width: 100%;
+}
+
+/* definir as propriedades da página contato */
+
+#txt-contato {
+    width: 100%;
+    height: 100%;
+}
+
+#txt-contato form{
+    width: 38%;
+    position: relative;
+    float:left;
+    background-color: #fff;
+    padding: 2%;
+    top: 5%;
+    min-height: 400px;
+    font-family: 'montserrat';
+}
+
+#txt-contato form label {
+    font-weight: bold;
+    font-family: 'krona one';
+    color: #000;
+}
+
+#txt-contato form input {
+    max-width: 100%; 
+    width: 99%; 
+    height: 30px; 
+    margin-top: 10px;
+    margin-bottom: 15px; 
+    border: solid #6F5CF3 1px;
+    padding-left: 1%;
+}
+
+#txt-contato form textarea {
+    max-width: 100%;
+    width: 99%; 
+    border: solid #6F5CF3 1px; 
+    padding-left: 1%;
+    min-height: 100px;
+    font-family: 'montserrat';
+}
+    
+#txt-contato form button {
+    width: 30%; 
+    height: auto; 
+    cursor: pointer; 
+    background-color: #6F5CF3;
+    color: #fff; 
+    font-size: 1.5em; 
+    padding: 15px 0 15px 0; 
+    margin-left: 35%; 
+    margin-top: 1%;
+    border-radius: 5%;
+    font-family: 'krona one';
+}
+
+#txt-contato #conta-data{
+    width: 24%;
+    position: relative;
+    float: left;
+    padding: 2%;
+    background-color: #6F5CF3;
+    color: #fff;
+    top: 5%; 
+    margin-left: 1.5%;
+    height:400px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+#txt-contato #conta-data h3{ 
+    color: #fff;
+    text-align: center;
+}
+
+#txt-contato #conta-data h5{ 
+    margin-top: 6%;
+    margin-bottom: 4%; 
+    vertical-align: middle;
+}
+
+#txt-contato #conta-data h5 img{
+    width: 50px;
+}
+
